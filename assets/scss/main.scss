@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+[data-reactroot] {
+	height: 100% !important;
+}
+
+#app-wrapper {
+	height: 100vh;
+	width: 100vw;
+	padding: 10vh 10vw;
+	background-image: url("../../resources/graphics/background.png");
+}
+
+#app {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
+}
+
+.item-count {
+	color: #9A9A9A;
+}
+
+.food-facet:hover {
+	cursor: pointer;
+	background-color: #2897C5;
+	border-radius: 3px;
+	color: #fff;
+}
+
+.food-facet:hover .item-count {
+	color: #fff;
+}
+
+.food-facet-active {
+	background-color: #2897C5;
+	color: #fff;
+}
+
+.food-facet-active .item-count {
+	color: #fff;
+}
+
+.rating-facet-active,
+.rating-facet:hover {
+	border-right: 15px solid #2897C5;
+}
